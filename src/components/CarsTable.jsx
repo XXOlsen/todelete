@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import facade from '../apiFacade';
+import {fetchAny} from '../apiFacade';
 
 const CarsTable = () => {
   const [cars, setCars] = useState([]);

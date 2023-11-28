@@ -29,15 +29,15 @@ const handleHttpErrors = async (res) => {
     return opts;
   }
 
-  const fetchAny = async (
+  export const fetchAny = async (
     url, 
     handleData, 
     handleError, 
     method, 
     body, 
     withToken) => {
-    if (properties.backendURL)
-      url = properties.backendURL + url;
+    // if (properties.backendURL)
+     // url = properties.backendURL + url;
     const options = makeOptions(method, withToken, body);
     try {
       const res = await fetch(url, options);
